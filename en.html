@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xu Junyi(Otis) | Academic Homepage</title>
+  <meta name="description" content="Xu Junyi(Otis) - Research / Teaching / Publications" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#071028 0%, #0b1220 100%);color:#e6eef8;line-height:1.6}
+    .container{max-width:1000px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;background:var(--glass);padding:20px;border-radius:12px}
+    .photo{width:140px;height:140px;border-radius:12px;overflow:hidden;flex:0 0 140px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px}
+    h2{margin:0 0 8px 0;font-size:18px}
+    .role{color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:#fff;text-decoration:none}
+
+    ul.pub{list-style:none;padding:0;margin:0}
+    ul.pub li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:860px){.grid{grid-template-columns:1fr}.hero{grid-template-columns:100px 1fr}.photo{width:100px;height:100px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <strong style="font-size:14px">Academic Homepage</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <a href="/index.html" style="margin-left:10px">中文</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="photo">
+          <!-- Replace images/profile.jpg with your photo path -->
+          <img src="/images/profile.jpg" alt="Profile Photo" onerror="this.style.filter='grayscale(100%)';this.alt='Placeholder Photo'">
+        </div>
+        <div>
+          <h1>Xu Junyi(Otis)</h1>
+          <div class="role">PhD Student • Some University / Some Lab</div>
+          <p class="muted" style="margin-top:10px">Research Interests: Fill in your research interests. Briefly describe your current research topics, methodologies, and representative achievements in 2-3 sentences.</p>
+          <div style="margin-top:12px">
+            <a class="btn" href="#publications">View Publications</a>
+            <a class="btn" href="/files/CV.pdf" style="margin-left:10px">Download CV (PDF)</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <div class="section-title">
+            <h2>Research</h2>
+            <span class="muted">Recent Projects</span>
+          </div>
+          <p>List your current research projects or lab directions. Include 2-4 points, each with 1-2 lines.</p>
+
+          <h3 style="margin-top:12px">Representative Work</h3>
+          <ul>
+            <li class="muted">• Project A — Brief description (method / data / key findings).</li>
+            <li class="muted">• Project B — Brief description.</li>
+          </ul>
+        </section>
+
+        <aside class="card">
+          <div class="section-title">
+            <h2>Links</h2>
+            <span class="muted">Social & Resources</span>
+          </div>
+          <p><strong>ORCID:</strong> <span class="muted">0000-0000-0000-0000</span></p>
+          <p><strong>Google Scholar:</strong> <a href="#" class="muted">Profile Page</a></p>
+          <p><strong>GitHub:</strong> <a href="#" class="muted">github.com/yourname</a></p>
+          <p><strong>Email:</strong> <a href="mailto:you@university.edu" class="muted">you@university.edu</a></p>
+        </aside>
+      </div>
+
+      <section class="card" id="awards" style="margin-top:18px">
+        <div class="section-title">
+          <h2>Awards & Honors</h2>
+        </div>
+        <ul>
+          <li><strong>Award Name</strong> - Institution (Year)</li>
+          <li><strong>Scholarship Name</strong> - Institution (Year)</li>
+        </ul>
+      </section>
+
+      <section class="card" id="publications" style="margin-top:18px">
+        <div class="section-title">
+          <h2>Academic Works</h2>
+          <a class="muted" href="/files/publications.pdf">Full List (PDF)</a>
+        </div>
+        <ul class="pub">
+          <li>
+            <div><strong>You, Collaborator</strong>. "<em>Paper Title</em>". Conference/Journal (Status). <span class="muted">(Brief description or link)</span></div>
+          </li>
+          <li>
+            <div><strong>Collaborator, You</strong>. "<em>Another Paper</em>". Conference/Journal (Status). <span class="muted">(Brief description)</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="teaching" style="margin-top:18px">
+        <div class="section-title">
+          <h2>Teaching</h2>
+          <span class="muted">Courses & Materials</span>
+        </div>
+        <p>Current semester course: Sample Course Name (Undergraduate/Graduate). List previous courses, lecture notes, and assignment links here.</p>
+      </section>
+
+      <section class="card" id="education" style="margin-top:18px">
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+        <ul>
+          <li><strong>Bachelor</strong> - University of Electronic Science and Technology of China (2021.9-2025.6)</li>
+          <li><strong>Degree</strong> - University of Chinese Academy of Sciences/Institute of Automation, Chinese Academy of Sciences (Year)</li>
+        </ul>
+      </section>
+
+      <section class="card" id="contact" style="margin-top:18px">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <span class="muted">Office Address / Contact</span>
+        </div>
+        <p>Affiliation: Some University / Some Lab</p>
+        <p>Address: City, Street, Postal Code</p>
+        <p><strong>Email:</strong> <a class="muted" href="mailto:you@university.edu">you@university.edu</a></p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Xu Junyi(Otis) — To customize this page, edit the code in the canvas or tell me what needs to be replaced.
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
