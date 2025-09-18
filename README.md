@@ -1,7 +1,7 @@
 # 学术主页
 
 这是一个简洁的个人学术主页模板，基于 **HTML + CSS**，可直接部署在 GitHub Pages 上。
-
+https://otis-xjy.github.io/academic-homepage/
 ---
 
 ## 📂 文件结构
