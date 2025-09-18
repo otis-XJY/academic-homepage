@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>姓名 | 学术主页</title>
+  <meta name="description" content="研究员姓名 — 研究方向 / 教学 / 出版物" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#071028 0%, #0b1220 100%);color:#e6eef8;line-height:1.6}
+    .container{max-width:1000px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;background:var(--glass);padding:20px;border-radius:12px}
+    .photo{width:140px;height:140px;border-radius:12px;overflow:hidden;flex:0 0 140px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px}
+    h2{margin:0 0 8px 0;font-size:18px}
+    .role{color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:#fff;text-decoration:none}
+
+    ul.pub{list-style:none;padding:0;margin:0}
+    ul.pub li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:860px){.grid{grid-template-columns:1fr}.hero{grid-template-columns:100px 1fr}.photo{width:100px;height:100px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <strong style="font-size:14px">学术主页</strong>
+      </div>
+      <nav>
+        <a href="#about">关于</a>
+        <a href="#research">研究</a>
+        <a href="#publications">出版物</a>
+        <a href="#teaching">教学</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="photo">
+          <!-- 把 images/profile.jpg 替换为你的照片路径 -->
+          <img src="/images/profile.jpg" alt="个人照片" onerror="this.style.filter='grayscale(100%)';this.alt='占位照片'">
+        </div>
+        <div>
+          <h1>姓名（英文名）</h1>
+          <div class="role">职称 • 单位 / 实验室</div>
+          <p class="muted" style="margin-top:10px">研究方向：机器学习、计算神经科学、复杂系统等。简介：在此处写 2–3 行简介，突出当前研究主题和方法论，以及若干代表性成果。</p>
+          <div style="margin-top:12px">
+            <a class="btn" href="#publications">查看论文</a>
+            <a class="btn" href="/files/CV.pdf" style="margin-left:10px">下载简历 (PDF)</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <div class="section-title">
+            <h2>研究</h2>
+            <span class="muted">近期项目</span>
+          </div>
+          <p>在这里列出你当前的研究项目或课题组方向。可包含 2–4 个要点，每个要点 1–2 行。</p>
+
+          <h3 style="margin-top:12px">代表性工作</h3>
+          <ul>
+            <li class="muted">• 项目 A — 简短说明（方法 / 数据 / 主要发现）。</li>
+            <li class="muted">• 项目 B — 简短说明。</li>
+          </ul>
+        </section>
+
+        <aside class="card">
+          <div class="section-title">
+            <h2>链接</h2>
+            <span class="muted">社交 & 资料</span>
+          </div>
+          <p><strong>ORCID:</strong> <span class="muted">0000-0000-0000-0000</span></p>
+          <p><strong>Google Scholar:</strong> <a href="#" class="muted">个人页面</a></p>
+          <p><strong>GitHub:</strong> <a href="#" class="muted">github.com/yourname</a></p>
+          <p><strong>Email:</strong> <a href="mailto:you@university.edu" class="muted">you@university.edu</a></p>
+        </aside>
+      </div>
+
+      <section class="card" id="publications" style="margin-top:18px">
+        <div class="section-title">
+          <h2>部分出版物</h2>
+          <a class="muted" href="/files/publications.pdf">完整列表 (PDF)</a>
+        </div>
+        <ul class="pub">
+          <li>
+            <div><strong>张三, 李四, 你</strong>. 标题：<em>论文标题示例</em>. 会议/期刊 (年份). <span class="muted">（简短说明或链接）</span></div>
+          </li>
+          <li>
+            <div><strong>你, 王五</strong>. 标题：<em>另一篇论文</em>. 期刊 (年份). <span class="muted">（简短说明）</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="teaching" style="margin-top:18px">
+        <div class="section-title">
+          <h2>教学</h2>
+          <span class="muted">课程与教材</span>
+        </div>
+        <p>本学期课程：示例课程名称（本科/研究生）。在此处列出以往授课、讲义与作业链接。</p>
+      </section>
+
+      <section class="card" id="contact" style="margin-top:18px">
+        <div class="section-title">
+          <h2>联系</h2>
+          <span class="muted">办公室地址 / 联系方式</span>
+        </div>
+        <p>单位：某大学 / 某实验室</p>
+        <p>地址：城市，街道，邮编</p>
+        <p><strong>Email:</strong> <a class="muted" href="mailto:you@university.edu">you@university.edu</a></p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> 姓名 — 若要自定义页面，请在画布中编辑代码或告诉我需要替换的内容。
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // 自动年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
